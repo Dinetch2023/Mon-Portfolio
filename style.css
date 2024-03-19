@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Meow+Script&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(13.jpg);
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span ul button {
+  padding: 3px 1rem;
+  border-radius: 50px;
+  margin-bottom: 0.2rem;
+  background-color: #770f0f;
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-family: "Lato";
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+nav img {
+  border-radius: 40%;
+  width: 130px;
+  display: flex;
+  box-shadow: 8px 8px 8px #770f0f;
+  margin: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: 80px 80px;
+}
+h1 {
+  font-family: "Meow Script";
+  font-size: 10rem;
+  color: black;
+  text-shadow: 0px 8px 8px #770f0f;
+  display: grid;
+  grid-column: 2 / 5;
+  grid-row: 1;
+}
+
+h2 {
+  font-family: "Lato";
+  font-size: 10rem;
+  color: black;
+  display: grid;
+  grid-column: 3 / 5;
+  grid-row: 2 / 2;
+}
+main h2 img {
+  grid-column: 4 / 5;
+  grid-row: 1;
+}
+
+.userName {
+  margin: 2rem;
+  font-family: "Lato";
+  color: black;
+  font-size: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
